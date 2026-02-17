@@ -12,7 +12,7 @@ body {
     font-family: Manrope, Arial;
 }
 
-img {
+.drawers-img {
     width: 250px;
     border-radius: 10px 0 0 10px;
 }
@@ -43,12 +43,12 @@ img {
 }
 
 .share-icon {
-    width: 20px;
+    width: 15px;
 }
 
 .share-icon-div {
     background-color: hsl(210, 46%, 95%);
-    padding: 10px;
+    padding: 8px 10px;
     border-radius: 100%;
 }
 
@@ -56,4 +56,37 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.avatar {
+    width: 35px;
+    border-radius: 100%;
+}
+
+.info-div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.name-p {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.date-p {
+    font-size: 14px;
+    color: hsl(214, 17%, 51%);
+}
+
+@media (max-width: 675px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .drawers-img {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
 }
